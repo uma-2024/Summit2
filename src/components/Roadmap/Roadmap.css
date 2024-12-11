@@ -1,0 +1,216 @@
+.roadmap-container {
+  padding: 0px 80px;
+  padding-top: 100px;
+  color: #fff;
+  background-color: #000;
+  text-align: center;
+}
+
+.roadmap-container h2 {
+  color: #FFF;
+  margin-top: 0px;
+  font-family: "Bakbak One";
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 36px;
+  margin-bottom: 26px;
+  background: linear-gradient(90deg, #FF1CEE 0%, #516AFF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.subtitle {
+  color: #FFF;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 50px;
+  width: 700px;
+  margin: 0px auto;
+}
+
+.timeline {
+  position: relative;
+  margin-top: 45px;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 4px;
+  background: linear-gradient(91deg, rgba(21, 191, 253, 0.70) 47.62%, rgba(156, 55, 253, 0.70) 51.2%);
+  top: 140px;
+  bottom: 0;
+  left: 48%;
+  margin-left: -1px;
+  height: 81.2%;
+}
+
+.roadmap-item {
+  position: relative;
+  width: 200px;
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  left: 60%;
+}
+
+.roadmap-item .content {
+   padding: 20px;
+  /* max-width: 470px;  
+  width:100%;   */
+  width: 196%;
+  position: relative;
+  border-radius: 8px;
+  border: 1px solid var(--Gredient, #15BFFD);
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(19.04px);
+  height: 335px;
+  margin: 0 auto;   
+
+  /* padding: 20px;
+  max-width: 474px;  
+  min-width: 300px;  
+  width: 100%; 
+  position: relative;
+  border-radius: 8px;
+  border: 1px solid var(--Gredient, #15BFFD);
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(19.04px);
+  height: 335px;
+  display: flex;
+  flex-direction: column;  
+  justify-content: flex-start;  
+  align-items: center;  */
+  /* overflow: hidden;   */
+  /* box-sizing: border-box;  
+  margin: 0 auto;   */
+
+}
+
+
+.content h3 {
+  margin-top: 0;
+  color: #FFF;
+  text-align: center;
+  font-family: "Bakbak One";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.content span {
+  color: #FFF;
+  font-family: "Bakbak One";
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 30px;
+  display: flex;
+}
+
+.content p {
+  color: #B4C5CB;
+  font-family: Poppins;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 27px;
+  text-align: left;
+  margin-top: 16px;
+}
+
+.roadmap-item:nth-child(even) .content {
+  background-color: rgba(128, 0, 128, 0.1);
+}
+@media (min-width: 1181px) and (max-width: 1400px) {
+  timeline::after {
+    left: 53%;
+
+  }
+}
+
+/* Hide SVGs in mobile view */
+@media screen and (max-width: 768px) {
+  .hide-mobile {
+    display: none;
+  }
+
+  .roadmap-container {
+    padding: 24px 16px;
+    padding-bottom: 0px;
+  }
+
+  .timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -40px;
+  }
+
+  .timeline::after {
+    content: none;
+  }
+
+  .roadmap-item {
+    width: 100%;
+    left: 0;
+  }
+
+  
+
+  .roadmap-item.left,
+  .roadmap-item.right {
+    left: 0;
+  }
+
+  .roadmap-item .content {
+    width: 100%;
+    margin-bottom: 16px;
+    padding: 10px;
+    text-align: left;
+  }
+
+  .content h3 {
+    font-size: 18px;
+  }
+
+  .content span {
+    font-size: 28px;
+  }
+
+  .content p {
+    font-size: 16px;
+  }
+  .subtitle {
+    width: 100%;
+    font-size: 16px;
+    text-align: left;
+  }
+  .roadmap-item .content {
+    height: 100%;
+    width: 95%;
+  }
+  .roadmap-container h2 {
+
+    font-size: 34px;
+  }
+}
+
+/* @media screen and (min-width: 768px) {
+  .roadmap-item .content {
+    padding: 30px; 
+    height: 400px;  
+  }
+} */
+
+/* body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;  
+} */

@@ -1,0 +1,146 @@
+/* General Container */
+.unique-form-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #000;
+    color: #fff;
+    padding: 50px 110px;
+    padding-top: 100px;
+    gap: 50px;
+  }
+  
+  .unique-left-section {
+    flex: 1;
+  }
+  
+  .unique-left-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    margin-top: 0px;
+  }
+  
+  .unique-left-section p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  
+  .unique-left-section img {
+    width: 300px;
+    border-radius: 10px;
+  }
+  
+  .unique-right-section {
+    flex: 1;
+
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .unique-form-row {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .unique-form-row input, .unique-form-row textarea {
+    flex: 1;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #fff;
+    background: transparent;
+    color: #fff;
+    border-radius: 5px;
+    outline: none;
+  }
+  
+  .unique-form-row textarea {
+    height: 150px;
+  }
+  
+  .unique-form-row input:last-child {
+    margin-right: 0;
+  }
+  
+  .unique-checkbox-row {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .unique-checkbox-row input {
+    margin-right: 10px;
+    width: auto;
+  }
+  
+  .unique-checkbox-row label {
+    font-size: 0.9rem;
+  }
+  
+  .unique-checkbox-row label span {
+    color: #f9d423;
+  }
+  
+  .unique-submit-btn {
+    padding: 10px 20px;
+    border-radius: 160px;
+    background: linear-gradient(90deg, #FF1CEE 0%, #516AFF 100%);
+    border: none;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+ /* Label Styling */
+form label {
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .unique-form-row {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .unique-form-row input, .unique-form-row textarea {
+    margin-top: 5px;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .unique-form-container {
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 16px;
+  padding-top: 40px;
+  gap: 16px;
+    }
+  
+    .unique-left-section {
+      margin-bottom: 30px;
+      text-align: center;
+    }
+  
+    .unique-right-section {
+      width: 100%;
+    }
+  
+    .unique-form-row input, .unique-form-row textarea {
+      margin-right: 0;
+    }
+    .unique-left-section h1 {
+        font-size: 34px;
+    }
+    .unique-left-section p {
+        font-size: 16px;
+        text-align: left;
+    }
+  }
+  

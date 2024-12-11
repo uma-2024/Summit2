@@ -1,0 +1,37 @@
+.circlegradient-container {
+    border-radius: 50%;
+    background: linear-gradient(221deg, rgba(255, 28, 238, 0.26) 11.49%, rgba(81, 106, 255, 0.26) 71.86%);
+    filter: blur(132px);
+    position: absolute;
+    top: 100px;
+    right: 100px;
+    width: 568px;
+    height: 568px;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 1024px) {
+    .circlegradient-container {
+      width: 500px;
+      height: 500px;
+      filter: blur(100px);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .circlegradient-container {
+      width: 350px;
+      height: 350px;
+      filter: blur(80px);
+      display: none;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .circlegradient-container {
+      width: 250px;
+      height: 250px;
+      filter: blur(60px);
+    }
+  }
+  
