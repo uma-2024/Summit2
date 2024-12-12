@@ -46,6 +46,7 @@
   left: 48%;
   margin-left: -1px;
   height: 81.2%;
+  z-index: 0;
 }
 
 .roadmap-item {

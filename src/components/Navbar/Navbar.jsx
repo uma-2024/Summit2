@@ -1,42 +1,42 @@
 import React, { useState } from "react";
 import "./Navbar.css";
 import logoImage from "../../Assets/Images/Summit.svg";
+import {  Link, useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const [menuActive, setMenuActive] = useState(false);
-
+  const navigate = useNavigate();
   const toggleMenu = () => {
     setMenuActive(!menuActive);
-    document.body.style.overflow = menuActive ? "auto" : "hidden"; 
+    document.body.style.overflow = menuActive ? "auto" : "hidden";
   };
   const handleOpenPDF = () => {
     const pdfPath = "/Summit_Whitepaper.pdf";
     window.open(pdfPath, "_blank", "noopener,noreferrer");
   };
 
-  // Function to scroll to the top of the page
   const scrollToSection = (sectionId) => {
     const section = document.getElementById(sectionId);
     if (section) {
-      const offset = 80; 
-      const elementPosition = section.getBoundingClientRect().top + window.pageYOffset;
+      const offset = 80;
+      const elementPosition =
+        section.getBoundingClientRect().top + window.pageYOffset;
       const offsetPosition = elementPosition - offset;
-  
+
       window.scrollTo({
         top: offsetPosition,
         behavior: "smooth",
       });
     }
-    setMenuActive(false); 
-    document.body.style.overflow = "auto"; 
+    setMenuActive(false);
+    document.body.style.overflow = "auto";
   };
-  
 
   return (
     <nav className="navbar">
       <div className="navbar-container">
         {/* Logo */}
-        <div className="navbar-logo">
+        <div className="navbar-logo"  onClick={() => navigate("/")}>
           <img src={logoImage} alt="Logo" />
         </div>
 
@@ -52,26 +52,26 @@ const Navbar = () => {
 
         {/* Menu Items */}
         <ul className={`navbar-menu ${menuActive ? "active" : ""}`}>
-          <li className="navbar-item">
-            <a onClick={() => scrollToSection("Header")}>Home</a>
+        <li className="navbar-item" onClick={() => navigate("/")}>
+            <Link onClick={() => scrollToSection("Header")}>Home</Link>
           </li>
           <li className="navbar-item">
-            <a onClick={() => scrollToSection("Aboutus")}>About</a>
+            <Link onClick={() => scrollToSection("Aboutus")}>About</Link>
           </li>
           <li className="navbar-item">
-            <a onClick={() => scrollToSection("Roadmap")}>Roadmap</a>
+            <Link onClick={() => scrollToSection("Roadmap")}>Roadmap</Link>
           </li>
           <li className="navbar-item">
-            <a onClick={() => scrollToSection("NewsBlogs")}>Blogs</a>
+            <Link onClick={() => scrollToSection("NewsBlogs")}>Blogs</Link>
           </li>
           <li className="navbar-item">
-            <a onClick={() => scrollToSection("Footer")}>Contact Us</a>
+            <Link onClick={() => scrollToSection("Footer")}>Contact Us</Link>
           </li>
           <li className="navbar-item">
-            <a onClick={handleOpenPDF}>Whitepaper</a>
+            <Link onClick={handleOpenPDF}>Whitepaper</Link>
           </li>
           <li className="navbar-item">
-            <a href="/unite-to-earn">Unite-to-earn</a>
+            <Link to="/unite-to-earn">Unite-to-earn</Link>
           </li>
           <li className="navbar-item mobile-wallet-btn">
             <button className="navbar-wallet-btn">Buy Now</button>
@@ -80,7 +80,7 @@ const Navbar = () => {
 
         {/* Desktop Connect Wallet Button */}
         <button className="navbar-wallet-btn desktop-wallet-btn">
-        Buy Now
+          Buy Now
         </button>
       </div>
     </nav>
@@ -88,10 +88,6 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-
-
-
 
 // import React, { useState } from "react";
 // import "./Navbar.css";

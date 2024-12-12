@@ -30,8 +30,8 @@ function App() {
             <Footer />
             <CircleGradient />
           </>} />
-          <Route path="/unite-to-earn" element={<GStacking/>} />
-          <Route path="/unite-form" element={<FormComponent2/>} />
+          <Route path="/unite-to-earn" element={<><GStacking/>  <Footer /></>} />
+          <Route path="/unite-form" element={<><FormComponent2/>  <Footer /></>} />
         </Routes>
       </div>
     </BrowserRouter>

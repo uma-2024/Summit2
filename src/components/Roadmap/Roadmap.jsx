@@ -63,7 +63,7 @@ const Roadmap = () => {
               height="24"
               viewBox="0 0 24 24"
               fill="none"
-              style={{ position: "relative", top: "120px", left: "38px" }}
+              style={{ position: "relative", top: "120px", left: "38px", zIndex:'1' }}
             >
               <circle cx="12" cy="12" r="12" fill="#15BFFD" />
             </svg>
@@ -73,7 +73,7 @@ const Roadmap = () => {
               height="24"
               viewBox="0 0 24 24"
               fill="none"
-              style={{ position: "relative", top: "2000px", left: "14px" }}
+              style={{ position: "relative", top: "2000px", left: "14px", zIndex:'1' }}
             >
               <circle cx="12" cy="12" r="12" fill="#15BFFD" />
             </svg>
@@ -83,7 +83,7 @@ const Roadmap = () => {
               height="24"
               viewBox="0 0 24 24"
               fill="none"
-              style={{ position: "relative", top: "650px", left: "-12px" }}
+              style={{ position: "relative", top: "650px", left: "-12px", zIndex:'1' }}
             >
               <circle cx="12" cy="12" r="12" fill="#15BFFD" />
             </svg>
@@ -93,7 +93,7 @@ const Roadmap = () => {
               height="24"
               viewBox="0 0 24 24"
               fill="none"
-              style={{ position: "relative", top: "850px", left: "-37px" }}
+              style={{ position: "relative", top: "850px", left: "-37px", zIndex:'1' }}
             >
               <circle cx="12" cy="12" r="12" fill="#15BFFD" />
             </svg>
@@ -103,7 +103,7 @@ const Roadmap = () => {
               height="24"
               viewBox="0 0 24 24"
               fill="none"
-              style={{ position: "relative", top: "1240px", left: "-60px" }}
+              style={{ position: "relative", top: "1240px", left: "-60px", zIndex:'1' }}
             >
               <circle cx="12" cy="12" r="12" fill="#15BFFD" />
             </svg>
@@ -113,7 +113,7 @@ const Roadmap = () => {
               height="24"
               viewBox="0 0 24 24"
               fill="none"
-              style={{ position: "relative", top: "1630px", left: "-83px" }}
+              style={{ position: "relative", top: "1630px", left: "-83px", zIndex:'1' }}
             >
               <circle cx="12" cy="12" r="12" fill="#15BFFD" />
             </svg>
