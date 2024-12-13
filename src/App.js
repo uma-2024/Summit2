@@ -18,7 +18,7 @@ function App() {
   return (
     <BrowserRouter>
       {/* ScrollToTop works independently */}
-      <ScrollToTop />
+   
       <div className="App">
         <Navbar />
         <Routes>

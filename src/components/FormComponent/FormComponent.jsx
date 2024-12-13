@@ -4,6 +4,7 @@ import summitImage from "../../Assets/Images/hedaerImage.png"; // Assuming this 
 
 const FormComponent = () => {
   return (
+    <section id="Contactus">
     <div className="unique-form-container">
       {/* Left Section */}
       <div className="unique-left-section">
@@ -52,6 +53,7 @@ const FormComponent = () => {
 
       </div>
     </div>
+    </section>
   );
 };
 

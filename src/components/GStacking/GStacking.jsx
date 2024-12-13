@@ -12,7 +12,7 @@ const GStacking = () => {
       <div className="g-left">
         <h1>
           How
-          <span>Unite-to-earn</span>Work
+          <span>Unite-to-earn</span>Works
         </h1>
         <p>
           The sole project with a thriving live ecosystem. It has maintained a

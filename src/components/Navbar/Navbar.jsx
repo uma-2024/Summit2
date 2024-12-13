@@ -73,7 +73,7 @@ const Navbar = () => {
             <Link onClick={() => scrollToSection("NewsBlogs")}>Blogs</Link>
           </li>
           <li className="navbar-item">
-            <Link onClick={() => scrollToSection("Footer")}>Contact Us</Link>
+            <Link onClick={() => scrollToSection("Contactus")}>Contact Us</Link>
           </li>
           <li className="navbar-item">
             <Link onClick={handleOpenPDF}>Whitepaper</Link>
