@@ -101,6 +101,7 @@ form label {
     margin-top: 5px;
     font-weight: bold;
     color: #fff;
+    text-align: left;
   }
   
   .unique-form-row {

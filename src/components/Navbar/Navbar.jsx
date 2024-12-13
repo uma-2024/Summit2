@@ -1,15 +1,17 @@
 import React, { useState } from "react";
 import "./Navbar.css";
 import logoImage from "../../Assets/Images/Summit.svg";
-import {  Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const [menuActive, setMenuActive] = useState(false);
   const navigate = useNavigate();
+
   const toggleMenu = () => {
     setMenuActive(!menuActive);
     document.body.style.overflow = menuActive ? "auto" : "hidden";
   };
+
   const handleOpenPDF = () => {
     const pdfPath = "/Summit_Whitepaper.pdf";
     window.open(pdfPath, "_blank", "noopener,noreferrer");
@@ -32,11 +34,17 @@ const Navbar = () => {
     document.body.style.overflow = "auto";
   };
 
+  const handleUniteToEarnClick = () => {
+    navigate("/unite-to-earn");
+    setMenuActive(false);
+    document.body.style.overflow = "auto";
+  };
+
   return (
     <nav className="navbar">
       <div className="navbar-container">
         {/* Logo */}
-        <div className="navbar-logo"  onClick={() => navigate("/")}>
+        <div className="navbar-logo" onClick={() => navigate("/")}>
           <img src={logoImage} alt="Logo" />
         </div>
 
@@ -52,7 +60,7 @@ const Navbar = () => {
 
         {/* Menu Items */}
         <ul className={`navbar-menu ${menuActive ? "active" : ""}`}>
-        <li className="navbar-item" onClick={() => navigate("/")}>
+          <li className="navbar-item" onClick={() => navigate("/")}>
             <Link onClick={() => scrollToSection("Header")}>Home</Link>
           </li>
           <li className="navbar-item">
@@ -71,7 +79,7 @@ const Navbar = () => {
             <Link onClick={handleOpenPDF}>Whitepaper</Link>
           </li>
           <li className="navbar-item">
-            <Link to="/unite-to-earn">Unite-to-earn</Link>
+            <Link to={'/unite-to-earn'} onClick={handleUniteToEarnClick}>Unite-to-earn</Link>
           </li>
           <li className="navbar-item mobile-wallet-btn">
             <button className="navbar-wallet-btn">Buy Now</button>
@@ -88,6 +96,7 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
 
 // import React, { useState } from "react";
 // import "./Navbar.css";

@@ -117,7 +117,7 @@ background: linear-gradient(90deg, #FF1CEE 0%, #516AFF 100%) !important;
 
   @media (max-width: 768px) {
     .form-container {
-      width: 90%;
+      width: 80%;
       }
       .form-row-inner21{
         width: 48%;
@@ -127,7 +127,7 @@ background: linear-gradient(90deg, #FF1CEE 0%, #516AFF 100%) !important;
         width: 100%;
       }
       .form-row {
-        gap: 0px;
+        gap: 20px;
       }
       .form-container h2 {
         margin-bottom: 12px;
@@ -136,5 +136,17 @@ background: linear-gradient(90deg, #FF1CEE 0%, #516AFF 100%) !important;
       .form-container p {
         margin-bottom: 40px;
         font-size: 13px;
+      }
+      .form-container-main {
+        padding-top: 41px;
+      }
+      .form-members .input123 {
+        display: block;
+        width: 84%;
+      }
+      form .input123 {
+        padding: 10px;
+        font-size: 14px;
+        width: 90%;
       }
   }
