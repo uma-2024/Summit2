@@ -34,7 +34,7 @@ const FormComponent2 = () => {
   return (
     <div className="form-container-main">
     <div className="form-container">
-      <h2>How Unite-to-earn WORKS</h2>
+      <h2>How Unite-to-earn Works</h2>
       <p>
         The sole project with a thriving live ecosystem. It has maintained a
         market presence since 2022, making it an influential and enduring
