@@ -64,7 +64,7 @@ const Navbar = () => {
             <Link onClick={() => scrollToSection("Header")}>Home</Link>
           </li>
           <li className="navbar-item">
-            <Link onClick={() => scrollToSection("Aboutus")}>About</Link>
+            <Link to={'https://summitpad-new.vercel.app/'} onClick={handleUniteToEarnClick}>Launchpad</Link>
           </li>
           <li className="navbar-item">
             <Link onClick={() => scrollToSection("Roadmap")}>Roadmap</Link>
