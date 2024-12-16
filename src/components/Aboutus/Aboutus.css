@@ -7,9 +7,9 @@
     gap: 85px;
 }
 
-.aboutus-container img{
+/* .aboutus-container img{
     height: 496px;
-}
+} */
 .about-content{
     display: flex;
     flex-direction: column;

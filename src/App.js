@@ -13,6 +13,7 @@ import FormComponent from './components/FormComponent/FormComponent';
 import GStacking from './components/GStacking/GStacking';
 import FormComponent2 from './components/FormComponent2/FormComponent2';
 import ScrollToTop from './components/ScrollToTop/ScrollToTop';
+import Launchpad from './components/Launchpad/Launchpad';
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
             }
           />
           <Route path="/unite-to-earn" element={<><GStacking /> <Footer /></>} />
+          <Route path="/launchpad" element={<Launchpad/>} />
           <Route path="/unite-form" element={<><FormComponent2 /> <Footer /></>} />
         </Routes>
       </div>

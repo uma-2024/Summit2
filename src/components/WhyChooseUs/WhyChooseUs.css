@@ -61,6 +61,7 @@ height: 96px;
 
 .text-content {
   width: 40%;
+  text-align: left;
 }
 
 .text-content h2 {

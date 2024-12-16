@@ -29,10 +29,12 @@
   align-items: flex-start;
   margin-bottom: 30px;
   flex-wrap: wrap;
+  font-family: "Bakbak One";
 }
 
 .unique-footer-logo {
   max-width: 300px;
+  text-align: left;
 }
 
 .unique-footer-title {
@@ -117,6 +119,8 @@
 .unique-footer-bottom p {
   font-size: 0.9rem;
   color: #bbbbbb;
+  text-align: left;
+  margin-top: 20px;
 }
 
 /* Responsive Styles */

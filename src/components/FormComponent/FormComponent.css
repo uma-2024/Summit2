@@ -8,10 +8,12 @@
     padding: 50px 110px;
     padding-top: 100px;
     gap: 50px;
+    font-family: "Bakbak One";
   }
   
   .unique-left-section {
     flex: 1;
+    text-align: left;
   }
   
   .unique-left-section h1 {
