@@ -1,19 +1,19 @@
 import React, { useEffect, useState } from "react";
-import { useAccount, useWaitForTransaction } from "wagmi";
-import { useWeb3Modal } from "@web3modal/wagmi/react";
+// import { useAccount, useWaitForTransaction } from "wagmi";
+// import { useWeb3Modal } from "@web3modal/wagmi/react";
 import { shortenAddress } from "../../Utils/HelperFunctions";
 import cloudImage from "../../Assets/Images/Group 3.svg";
 import cloudImage2 from "../../Assets/Images/Group 2.svg";
 import planeImage from "../../Assets/Images/Group 1.svg";
 
 const Hero = () => {
-  const { address, isConnected } = useAccount();
-  const { open, close } = useWeb3Modal();
-  const [tnxHash, setTnxHash] = useState("");
-  const { isError, isLoading, isSuccess } = useWaitForTransaction({
-    hash: tnxHash,
-  });
-  const [stakedAmount, setStakedAmount] = useState(999);
+//   const { address, isConnected } = useAccount();
+//   const { open, close } = useWeb3Modal();
+//   const [tnxHash, setTnxHash] = useState("");
+//   const { isError, isLoading, isSuccess } = useWaitForTransaction({
+//     hash: tnxHash,
+//   });
+//   const [stakedAmount, setStakedAmount] = useState(999);
 
   return (
     <div className="mb-4 overflow-hidden">
@@ -27,16 +27,16 @@ const Hero = () => {
           investments transform into extraordinary success. Join us on a journey
           where every idea becomes a triumph and every step inspires growth!
         </p>
-        <p className="text-center md:text-left mb-4">
+        {/* <p className="text-center md:text-left mb-4">
           {address
             ? "Your Total Staked Amount is " + stakedAmount + " MMIT "
             : ""}
-        </p>
+        </p> */}
         <div className="d-hero-btn-flex justify-center mb-3">
           <button className="apply-btn">Apply Now</button>
-          <button className="d-hero-g-btn" onClick={open}>
+          {/* <button className="d-hero-g-btn" onClick={open}>
             {address ? shortenAddress(address) : " Connect Wallet"}
-          </button>
+          </button> */}
         </div>
       </div>
       <div
