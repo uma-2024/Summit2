@@ -15,7 +15,8 @@ const IDO = () => {
           >
            Upcoming IDO
           </h1>
-          <p className="mb-4" style={{fontFamily:"poppins"}}>
+          <p className="mb-4" style={{fontFamily:"poppins", width: "80%",
+  margin: "0px auto"}}>
             <span>Why SUMMITPAD?</span> Gain early access to innovative crypto projects with Summit's upcoming IDO. Secure exclusive token allocations and be part of the next big breakthrough in blockchain technology. Don't miss out!
             growth.
           </p>

@@ -4,7 +4,7 @@ import FormComponent from './FormComponent'
 
 const UniteToEarn = () => {
   return (
-    <div>
+    <div id="UniteSection">
       <GStacking/>
       
     </div>

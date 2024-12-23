@@ -5,7 +5,7 @@ const ProjectCard = ({ img }) => {
     <div>
       <div className="bg-card  rounded-lg shadow-lg d-flex flex-col">
   
-        <img className=" max-h-40 p-5" src={img} style={{width:"40%", margin:"0 auto", borderRadius:'50%'}} />
+        <img className=" max-h-30 p-5" src={img} style={{width:"30%", margin:"0 auto", borderRadius:'50%'}} />
         <div className="p-4 d-flex flex-col align-items-center">
           <div >
             <h3 className="text-white text-lg mb-2">Coming Soon</h3>

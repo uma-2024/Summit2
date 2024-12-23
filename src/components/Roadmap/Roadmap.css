@@ -128,12 +128,149 @@
 .roadmap-item:nth-child(even) .content {
   background-color: rgba(128, 0, 128, 0.1);
 }
+.circle-svg5{
+  position: relative;
+   top: 1970px;
+     left: 587px;
+      z-index:1
+}
+.circle-svg1{
+ position: relative;
+  top: 120px;
+   left: 588px;
+    z-index:1
+   }
+   .circle-svg2{
+    position: relative;
+     top: 650px;
+      left: 587px;
+       z-index:1
+      }
+
+      .circle-svg3{
+        position: relative;
+         top: 850px;
+          left: 587px;
+           z-index:1
+          }
+
+          .circle-svg4{
+            position: relative;
+             top: 1240px;
+              left: 587px;
+               z-index:1
+              }
+              .circle-svg6{
+                position: relative;
+                 top: 1630px;
+                  left: 587px;
+                   z-index:1
+                  }
+            
+     .arrow-svg1{
+     position: relative; 
+     top: 127px;
+     left: 528px
+     }
+     .arrow-svg23{
+       position: relative;
+        top: 701px;
+      left: 603px
+     }
+     .arrow-svg24{
+      position: relative;
+  top: 917px;
+  left: 528px;
+     }
+     .arrow-svg25{
+      position: relative;
+  top: 1325px;
+  left: 603px;
+     }
+     .arrow-svg26{
+      position: relative;
+  top: 1731px;
+  left: 528px;
+     }
+     .arrow-svg27{
+      position: relative;
+  top: 1970px;
+  left: 603px;
+     }
 @media (min-width: 1181px) and (max-width: 1400px) {
   timeline::after {
     left: 53%;
 
   }
+  .circle-svg5{
+    position: relative;
+    top: 1970px;
+    left: 526px;
+    z-index:1
+  }
+  .circle-svg1{
+    position: relative;
+     top: 120px;
+      left: 526px;
+       z-index:1
+      }
+      .circle-svg2{
+        position: relative;
+         top: 650px;
+          left: 526px;
+           z-index:1
+          }
+          .circle-svg3{
+            position: relative;
+             top: 850px;
+              left: 526px;
+               z-index:1
+              }
+  
+              .circle-svg4{
+                position: relative;
+                 top: 1240px;
+                  left: 526px;
+                   z-index:1
+                  }
+                  .circle-svg6{
+                    position: relative;
+                     top: 1630px;
+                      left: 526px;
+                       z-index:1
+                      }
+                      .arrow-svg1{
+                        position: relative; 
+                        top: 127px;
+                        left: 472px
+                        }
+                        .arrow-svg23{
+                          position: relative;
+                           top: 701px;
+                         left: 526px
+                        }
+                        .arrow-svg24{
+                          position: relative;
+                      top: 917px;
+                      left: 481px;
+                         }
+                         .arrow-svg25{
+                          position: relative;
+                      top: 1325px;
+                      left: 533px;
+                         }
+                         .arrow-svg26{
+                          position: relative;
+                      top: 1731px;
+                      left: 476px;
+                         }
+                         .arrow-svg27{
+                          position: relative;
+                      top: 1970px;
+                      left: 526px;
+                         }
 }
+
 
 /* Hide SVGs in mobile view */
 @media screen and (max-width: 768px) {

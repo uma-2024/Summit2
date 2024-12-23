@@ -237,12 +237,17 @@
     width: 80%;
     font-size: 14px;
   }
-  
+  wui-card {
+    margin: 100px 0px !important;
+  }
   .radio-inputs .radio {
     flex: 1 1 auto;
     text-align: center;
   }
   
+element {
+}
+
   .radio-inputs .radio input {
     display: none;
   }
@@ -527,10 +532,10 @@
   
   /* Responsive Design */
   @media (max-width: 600px) {
-    .box-figure {
+    /* .box-figure {
       min-width: calc(100% - 12px);
-      /* Full width on smaller screens */
-    }
+     
+    } */
     .header-gradient-div{
       display: none;
     }
@@ -796,6 +801,9 @@
     .d-leading-flex>div {
       width: 100%;
     }
+    .plane-image {
+      width: 64px;
+    }
   }
   
   /* ////////////////////////////////// News Letter ////////////////////////////////// */
@@ -1036,6 +1044,9 @@
   @media screen and (max-width: 500px) {
     .blog-head {
       font-size: 26px !important;
+    }
+    .plane-image {
+      width: 64px;
     }
   }
   
